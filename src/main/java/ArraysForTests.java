@@ -33,4 +33,33 @@ public class ArraysForTests {
             return z;
         }
     }
+
+    public static void main(String[] args) {
+        ArraysForTests  lol = new ArraysForTests();
+        int[] olo = {2,3,4,4};
+        lol.newArrOnlyOneAndFour(olo);
+    }
+
+    public boolean newArrOnlyOneAndFour(int[] Arr) {
+        boolean q = false;
+        boolean w = false;
+        boolean z = true;
+        for (int i = 0; i < Arr.length; i++) {
+            if (Arr[i] == 4) {
+                q = true;
+            }else if (Arr[i] == 1) {
+                w = true;
+            } else {
+                z = false;
+            }
+        }
+        if ((q == true) & (w == true) & (z == true)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
+
+
+
